@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body><form action="#" th:action="@{/employeeform}" th:object="${employee}" method="post">
+    First Name: <input th:type="text" th:field="*{first}" /><br />
+    Last Name: <input th:type="text" th:field="*{last}" /><br />
+    SSN: <input th:type="number" th:field="*{ssn}" /><br />
+    DOB_Month: <input th:type="number" th:field="*{dob_m}" /><br />
+    DOB_Day: <input th:type="number" th:field="*{dob_d}" /><br />
+    DOB_Year: <input th:type="number" th:field="*{dob_y}"/><br />
+
+    <input th:type="submit" th:value="Submit"/>
+
+</form></body>
+</html>
